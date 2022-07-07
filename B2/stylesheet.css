@@ -1,0 +1,75 @@
+.wrapper {
+  max-width: 1500px;
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+        'site-title site-title site-title nav-1 nav-2 nav-3'
+        'post-title post-title post-title post-title side-bar';
+  grid-gap: 10px;
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+.wrapper > div {
+  padding: 5%;
+}
+
+.site-title {
+  grid-area: site-title;
+  background-color: #FDD430;
+}
+
+.nav-1 {
+  grid-area: nav-1;
+  background-color: #FCC0CA;
+}
+
+.nav-2 {
+  grid-area: nav-2;
+  background-color: #FCC0CA;
+}
+
+.nav-3 {
+  grid-area: nav-3;
+  background-color: #FCC0CA;
+}
+
+.post-title {
+  grid-area: post-title;
+  background-color: #AED7E4;
+}
+
+.side-bar {
+  grid-area: side-bar;
+  background-color: #FBA94B;
+}
+
+.post-meta {
+  grid-area: post-meta;
+  background-color: #96EB93;
+}
+
+.main-content {
+  grid-area: main-content;
+  background-color: #D2D2D2;
+}
+
+.ads {
+  grid-area: ads;
+  background-color: #1B7D11;
+}
+
+.main-content-image {
+  grid-area: main-content-image;
+  background-color: #FEFB37;
+}
+
+.other-stuffs {
+  grid-area: other-stuffs;
+  background-color: #DA4FF7;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #9F877F;
+}

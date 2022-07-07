@@ -1,0 +1,45 @@
+<html>
+  <body>
+    <div id="wrapper">
+        <div id="object"></div>
+    </div>
+  </body>
+</html>
+
+<style>
+  #wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  #object {
+    animation-duration: 6s;
+    animation-name: transform;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes transform {
+    0% {
+      height: 0px;
+      width: 0px;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid blue;
+    }
+
+    50% {
+      height: 200px;
+      width: 200px;
+      border: 0px solid transparent;
+      background-color: yellow;
+    }
+
+    100% {
+      height: 0px;
+      width: 0px;
+      border-left: 100px solid transparent;
+      border-right: 100px solid transparent;
+      border-bottom: 100px solid blue;
+    }
+  }
+</style>

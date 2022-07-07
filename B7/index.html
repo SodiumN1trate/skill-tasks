@@ -1,0 +1,29 @@
+<html>
+  <body>
+    <div id="wrapper">
+      <img src="2.jpg">
+    </div>
+  </body>
+</html>
+
+<style>
+  img {
+    filter: grayscale(100%);
+  
+  }
+
+  img:hover {
+    animation-name: grayscale-change;
+    animation-duration: 3s;  
+  }
+
+  @keyframes grayscale-change {
+    from {
+      filter: grayscale(100%);
+    }
+
+    to {
+      filter: grayscale(0%);
+    }
+  }
+</style>
